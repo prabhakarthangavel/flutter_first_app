@@ -1,8 +1,8 @@
-import 'package:first_app/Quiz%20App/resultScren.dart';
-import 'package:first_app/Quiz%20App/startScreen.dart';
+import 'package:first_app/resultScren.dart';
+import 'package:first_app/startScreen.dart';
 import 'package:first_app/data/questions.dart';
 import 'package:flutter/material.dart';
-import 'package:first_app/Quiz%20App/questionsScreen.dart';
+import 'package:first_app/questionsScreen.dart';
 
 class QuizApp extends StatefulWidget {
   const QuizApp({super.key});
@@ -47,9 +47,9 @@ class _QuizState extends State<QuizApp> {
     if (selectedAnswerrs.length == questions.length) {
       setState(() {
         debugPrint('**selectedAnswerrs $selectedAnswerrs');
-      setResultScreen(selectedAnswerrs);
-      debugPrint('**activeScreen $activeScreen');
-    });
+        setResultScreen(selectedAnswerrs);
+        debugPrint('**activeScreen $activeScreen');
+      });
     }
   }
 
